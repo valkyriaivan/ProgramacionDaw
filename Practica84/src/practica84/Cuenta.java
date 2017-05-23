@@ -22,4 +22,14 @@ public class Cuenta {
         this.interes=interes;
         this.saldo=saldo;
     }
+    public Cuenta(Cuenta cuenta){
+        this.nom=cuenta.nom;
+        this.ap1=cuenta.ap1;
+        this.ap2=cuenta.ap2;
+        this.dni=cuenta.dni;
+        this.nCuenta=cuenta.nCuenta;
+        this.interes=cuenta.interes;
+        this.saldo=cuenta.saldo;
+    }
+    
 }
