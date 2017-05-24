@@ -17,7 +17,7 @@ public class Cuenta {
         this.saldo="";
     }
     
-    public void Cuenta(String nom,String ap1,String ap2,String dni,String nCuenta,String interes,String saldo){
+    public Cuenta(String nom,String ap1,String ap2,String dni,String nCuenta,String interes,String saldo){
         this.nom=nom;
         this.ap1=ap1;
         this.ap2=ap2;
@@ -26,6 +26,7 @@ public class Cuenta {
         this.interes=interes;
         this.saldo=saldo;
     }
+    
     public Cuenta(Cuenta c){
         nom=c.nom;
         ap1=c.ap1;
@@ -35,6 +36,8 @@ public class Cuenta {
         interes=c.interes;
         saldo=c.saldo;
     }
+
+    //Getters
     public String getNom(){
         return nom;
     }
@@ -52,6 +55,26 @@ public class Cuenta {
     }
     public String saldo(){
         return saldo;
+    }
+    
+    //Setters
+    public void setNom(String nom){
+        this.nom=nom;
+    }
+    public void setAp1(String ap1){
+        this.ap1=ap1;
+    }
+    public void setAp2(String ap2){
+        this.ap2=ap2;
+    }
+    public void setNCuenta(String nCuenta){
+        this.nCuenta=nCuenta;
+    }
+    public void setInteres(String interes){
+        this.interes=interes;
+    }
+    public void setSaldo(String saldo){
+        this.saldo=saldo;
     }
     
     public void ingreso(){
