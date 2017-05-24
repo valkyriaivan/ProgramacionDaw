@@ -4,7 +4,7 @@ import java.util.Scanner;
 import libreriaNetbIvan.tests;
 
 public class Cuenta {
-    private String nom,ap1,ap2,dni,nCuenta,interes,saldo,inporte;
+    private String nom,ap1,ap2,dni,nCuenta,interes,saldo,inporte,saldoCT;
     tests t1 = new tests();
     
     public void Cuenta(){
@@ -47,31 +47,52 @@ public class Cuenta {
     public String getAp2(){
         return ap2;
     }
+    public String getDni(){
+        return dni;
+    }
     public String getNCuenta(){
         return nCuenta;
     }
     public String getInteres(){
         return interes;
     }
-    public String saldo(){
+    public String getSaldo(){
         return saldo;
+    }
+    public String getSaldoCT(){
+        return saldoCT;
     }
     
     //Setters
-    public void setNom(String nom){
-        this.nom=nom;
+    public void setNom(){
+        Scanner teclado1=new Scanner(System.in);
+        System.out.print("Nombre: ");
+        nom = teclado1.nextLine();
     }
-    public void setAp1(String ap1){
-        this.ap1=ap1;
+    public void setAp1(){
+        Scanner teclado1=new Scanner(System.in);
+        System.out.print("Apellido1: ");
+        ap1 = teclado1.nextLine();
     }
-    public void setAp2(String ap2){
-        this.ap2=ap2;
+    public void setAp2(){
+        Scanner teclado1=new Scanner(System.in);
+        System.out.print("Apellido2: ");
+        ap2 = teclado1.nextLine();
     }
-    public void setNCuenta(String nCuenta){
-        this.nCuenta=nCuenta;
+    public void setDni(){
+        Scanner teclado1=new Scanner(System.in);
+        System.out.print("DNI: ");
+        dni = teclado1.nextLine();
     }
-    public void setInteres(String interes){
-        this.interes=interes;
+    public void setNCuenta(){
+        Scanner teclado1=new Scanner(System.in);
+        System.out.print("Número cuenta: ");
+        nCuenta = teclado1.nextLine();
+    }
+    public void setInteres(){
+        Scanner teclado1=new Scanner(System.in);
+        System.out.print("Interes: ");
+        interes = teclado1.nextLine();
     }
     public void setSaldo(String saldo){
         this.saldo=saldo;
@@ -103,6 +124,24 @@ public class Cuenta {
         if(t1.testFloat(inporte)){
             if(Float.parseFloat(inporte)>0){
                 saldo = Float.toString(Float.parseFloat(saldo)-Float.parseFloat(inporte));
+            }
+            else{
+                System.err.println("El inporte tiene que ser positivo.");
+            }
+        }
+        else{
+            System.err.println("El inporte tiene que ser un número.");
+        }
+    }
+    public void transfer(String saldoCT){
+        Scanner teclado1=new Scanner(System.in);
+        System.out.print("Introduce el importe a transferir: ");
+        inporte=teclado1.nextLine();
+        
+        if(t1.testFloat(inporte)){
+            if(Float.parseFloat(inporte)>0){
+                saldo = Float.toString(Float.parseFloat(saldo)-Float.parseFloat(inporte));
+                this.saldoCT = Float.toString(Float.parseFloat(saldoCT)+Float.parseFloat(inporte));
             }
             else{
                 System.err.println("El inporte tiene que ser positivo.");
