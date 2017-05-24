@@ -89,6 +89,4 @@ public class Cuenta {
             System.err.println("El inporte tiene que ser un número.");
         }
     }
-    
-    
 }
