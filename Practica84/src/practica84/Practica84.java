@@ -73,11 +73,11 @@ public class Practica84 {
                 case 4:
                     if(elecC==1){
                         c1.transfer(c2.getSaldo());
-                        c2.setSaldo(c1.getSaldo());
+                        c2.setSaldo(c1.getSaldoCT());
                     }
                     else{
                         c2.transfer(c1.getSaldo());
-                        c1.setSaldo(c2.getSaldo());
+                        c1.setSaldo(c2.getSaldoCT());
                         
                     }
                     System.out.println("Transacción realizada con exito.");
