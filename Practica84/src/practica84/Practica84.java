@@ -26,7 +26,7 @@ public class Practica84 {
             switch(input){
                 case 1:
                     if(elecC==1){
-                        System.out.println("Datos de laa cuenta:");
+                        System.out.println("Datos de la cuenta:");
                         System.out.println("Nombre: " + c1.getNom());
                         System.out.println("Apellido 1: " + c1.getAp1());
                         System.out.println("Apellido 2: " + c1.getAp2());
@@ -36,7 +36,7 @@ public class Practica84 {
                         System.out.println("Saldo: " + c1.getSaldo());
                     }
                     else{
-                        System.out.println("Datos de laa cuenta:");
+                        System.out.println("Datos de la cuenta:");
                         System.out.println("Nombre: " + c2.getNom());
                         System.out.println("Apellido 1: " + c2.getAp1());
                         System.out.println("Apellido 2: " + c2.getAp2());
