@@ -7,7 +7,7 @@ public class CuentaArray {
     private String nom,ap1,ap2,dni,nCuenta,interes,saldo,inporte,saldoCT;
     tests t1 = new tests();
     
-    public void Cuenta(){
+    public void CuentaArray(){
         this.nom="";
         this.ap1="";
         this.ap2="";
