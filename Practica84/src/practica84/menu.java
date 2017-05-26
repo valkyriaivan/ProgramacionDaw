@@ -1,4 +1,3 @@
-
 package practica84;
 
 import java.util.Scanner;
