@@ -7,6 +7,9 @@ public class CuentaArray {
     private String nom,ap1,ap2,dni,nCuenta,interes,saldo,inporte,saldoCT;
     tests t1 = new tests();
     
+    /**
+     * 
+     */
     public void CuentaArray(){
         this.nom="";
         this.ap1="";
@@ -16,7 +19,16 @@ public class CuentaArray {
         this.interes="";
         this.saldo="";
     }
-    
+    /**
+     * Constructor de la cuenta.
+     * @param nom
+     * @param ap1
+     * @param ap2
+     * @param dni
+     * @param nCuenta
+     * @param interes
+     * @param saldo 
+     */
     public CuentaArray(String nom,String ap1,String ap2,String dni,String nCuenta,String interes,String saldo){
         this.nom=nom;
         this.ap1=ap1;
@@ -26,7 +38,10 @@ public class CuentaArray {
         this.interes=interes;
         this.saldo=saldo;
     }
-    
+    /**
+     * 
+     * @param c 
+     */
     public CuentaArray(CuentaArray c){
         nom=c.nom;
         ap1=c.ap1;
@@ -38,6 +53,10 @@ public class CuentaArray {
     }
 
     //Getters
+    /**
+     * 
+     * @return 
+     */
     public String getNom(){
         return nom;
     }
