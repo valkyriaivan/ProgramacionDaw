@@ -3,6 +3,10 @@ package practica84;
 import java.util.Scanner;
 
 public class menu {
+    /**
+     * Muestra el menú y devuelve la elección en INT.
+     * @return Selección (INT)
+     */
     public int menu(){
         System.out.println("¿Que acción desea realizar?");
         System.out.println("----------------------------");
