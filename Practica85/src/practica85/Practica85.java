@@ -19,22 +19,22 @@ public class Practica85 {
         Menu m1 = new Menu();
         
         while(creaC!=0){
-            System.out.print("¿Quieres crea una cuenta?[0=no | 1=sí]: ");
+            System.out.println("¿Quieres crea una cuenta?[0=no | 1=sí]: ");
             creaC=input.nextInt();
             if(creaC==1){
-                System.out.print("Nombre: ");
+                System.out.println("Nombre: ");
                 nom=input.nextLine();
-                System.out.print("Apellido1: ");
+                System.out.println("Apellido1: ");
                 ap1=input.nextLine();
-                System.out.print("Apellido2: ");
+                System.out.println("Apellido2: ");
                 ap2=input.nextLine();
-                System.out.print("DNI: ");
+                System.out.println("DNI: ");
                 dni=input.nextLine();
-                System.out.print("Número cuenta: ");
+                System.out.println("Número cuenta: ");
                 nCuenta=input.nextLine();
-                System.out.print("Interes: ");
+                System.out.println("Interes: ");
                 interes=input.nextLine();
-                System.out.print("Saldo: ");
+                System.out.println("Saldo: ");
                 saldo=input.nextLine();
                 
                 cuentas.add(new CuentaArray(nom,ap1,ap2,dni,nCuenta,interes,saldo));
