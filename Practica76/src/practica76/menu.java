@@ -5,6 +5,9 @@ import libreriaNetbIvan.tests;
 
 public class menu {
     tests t1 = new tests();
+    /**
+     * Muestra el menú.
+     */
     public void mostrar() {
         System.out.println("--Calculadora--");
         System.out.println("1 - Suma");
@@ -14,7 +17,10 @@ public class menu {
         System.out.println("5 - Resto");
         System.out.println("6 - Salir"); 
     }
-    
+    /**
+     * Lee, comprueba y devuelve el input del menú
+     * @return Input.
+     */
     public int leer() {
         String input;
         Scanner teclado1=new Scanner(System.in);
